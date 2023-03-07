@@ -1,0 +1,21 @@
+\section*{Aufgabe 2 (10 Punkte)}
+
+In einem 32-bit Wort $w$ sind drei Bitfelder $a$, $b$ und $c$ folgendermaßen definiert:
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+31 & 30 & 29 & 28 & 27 & 26 & 25 & 24 & 23 & 22 & 21 & 20 & 19 & 18 & 17 & 16 & 15 & 14 & 13 & 12 & 11 & 10 & 9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1 & 0\\
+\hline
+x & x & $a_6$ & $a_5$ & $a_4$ & $a_3$ & $a_2$ & $a_1$ & $a_0$ & x & x & x & x & $b_8$ & $b_7$ & $b_6$ & $b_5$ & $b_4$ & $b_3$ & $b_2$ & $b_1$ & $b_0$ & x & x & $c_4$ & $c_3$ & $c_2$ & $c_1$ & $c_0$ & x & x & x\\
+\hline
+\end{tabular}}
+\end{table}
+
+\begin{enumerate}[label={a)}, leftmargin=*]
+\item Geben Sie die Wertebereiche (dezimal) für ganze Zahlen an, die in $a$, $b$, $c$  i) vorzeichenlos und ii) als Zweierkomplement dargestellt werden können!
+\item[b)] In Hexadezimaldarstellung sei $w = \text{E0A86780}$. Geben Sie die Dezimaldarstellung der Zahlen in den Bitfeldern $a$, $b$ und $c$ an, wenn sie i) vorzeichenlos und ii) als Zweierkomplemente interpretiert werden!
+\item[c)] Es soll die Operationen $w \leftarrow (w \oplus m)$ (bitweise exklusives Oder der 32-bit Worte $w$ und $m$) ausgeführt werden. Geben Sie $m$ in Hexadezimaldarstellung an, so dass jedes Bit in den Bitfeldern $a$, $b$ und $c$ invertiert wird und die übrigen Bits unverändert bleiben!
+\item[d)] Geben Sie den Wert des 32-bit Wortes $w$ in Hexadezimaldarstellung an, wenn in den Bitfeldern die Werte $a : 25$, $b : -1$ und $c : -4$ als Zweierkomplemente dargestellt sind und die übrigen Bits den Wert 0 haben!
+\end{enumerate}

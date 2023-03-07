@@ -1,0 +1,20 @@
+\section*{Aufgabe 3 (10 Punkte)}
+
+\begin{enumerate}[label={a)}, leftmargin=*]
+\item Geben sie für die Zahlen i) \texttt{25.375} und ii) \texttt{45.45} jeweils die binäre Gleitkommadarstellung an, ggfs. unter Kennzeichung der Periode!
+\item[b)] Die beiden 32-bit Wörter i) \texttt{0x42820000} und ii) \texttt{0xBEC00000} sollen interpretiert werden als Gleitkommazahlen im IEEE 32-bit Format:
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+31 & 30 & 29 & 28 & 27 & 26 & 25 & 24 & 23 & 22 & 21 & 20 & 19 & 18 & 17 & 16 & 15 & 14 & 13 & 12 & 11 & 10 & 9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1 & 0\\
+\hline
+\texttt{BZ} & \multicolumn{8}{|c|}{\texttt{Exponent + 0x7F}} & \multicolumn{23}{|c|}{\texttt{Mantisse ohne "Hiden Bit"}}\\
+\hline
+\end{tabular}}
+\end{table}
+
+Bestimmen Sie jeweils die Darstellung der Zahl in der Form \texttt{VZ Mantisse * 2}$^\text{\texttt{Exponent}}$ und als dezimale Gleitkommazahl!
+\end{enumerate}
+
