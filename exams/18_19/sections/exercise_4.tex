@@ -1,0 +1,18 @@
+\section*{Aufgabe 4 (10 Punkte)}
+
+\begin{enumerate}[label={a)}, leftmargin=*]
+\item Geben sie für die Zahlen i) \texttt{50.0} und ii) \texttt{0.05} jeweils die binäre Gleitkommadarstellung an \texttt{(b ... b, b ... )} mit $\text{\texttt{b}}\in \text{\{0, 1\}}$ ggf. unter Kennzeichnung der Periode, sowie in normalisierter Form $(1, \text{\texttt{bbb}} \cdot \text{\texttt{2}}^e$, gerundet auf drei Nachkommastellen!
+\item[b)] Geben Sie die Zahl $z = (2^{24} + 3)$ in vorzeichenloser Binärdarstellung mit der mindestens benötigten Anzahl von Stellen an, sowie in normalisierter binärer Gleitkommadarstellung mit 23 Nachkommastellen (mathematische Rundung) und außerdem im IEEE 32-bit Format (binär und hexadezimal):
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+31 & 30 & 29 & 28 & 27 & 26 & 25 & 24 & 23 & 22 & 21 & 20 & 19 & 18 & 17 & 16 & 15 & 14 & 13 & 12 & 11 & 10 & 9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1 & 0\\
+\hline
+\texttt{VZ} & \multicolumn{8}{|c|}{\texttt{Exponent + 0x7F}} & \multicolumn{23}{|c|}{\texttt{Mantisse ohne "Hiden Bit"}}\\
+\hline
+\multicolumn{5}{l}{\texttt{VZ = 0}: positiv, \texttt{VZ = 1}: negativ}
+\end{tabular}}
+\end{table}
+\end{enumerate}

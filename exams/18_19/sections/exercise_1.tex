@@ -1,0 +1,13 @@
+\section*{Aufgabe 1 (10 Punkte)}
+
+Ganze Zahlen sollen als FOlgen von Ziffern aus dem Alphabet $A = \{M, N, P\}$ mit der lexikographischen Ordnung $M < N < P$ vermöge folgender Abbildungen dargestellt werden:\\
+
+$wert_z = A \rightarrow \mathbb{Z} \text{ mit } wert_z(M) = -1, wert_z(N) = 0, wert_z(P) = +1$
+
+$wert_f = A^n \rightarrow \mathbb{Z} \text{ mit } wert_f(z_{n-1}, \dots , z_1, z_0) = wert_z(z_{n-1}) \cdot 3^{n-1} + \dots + wert_z(z_1) \cdot 3^1 + wert_z(z_0) \cdot 3^0$
+
+\begin{enumerate}[label={a)}, leftmargin=*]
+\item Geben Sie die Anzahl der Elemente von $A^4$ an!
+\item[b)] Geben Sie die kleinste und größte Zahl an, die mit vier Ziffern dargestellt werden kann, sowie die entsprechenden Ziffernfolgen!
+\item[c)] Geben Sie für die dreistelligen Ziffernfolge $N N N$ die drei lexikographischen nächstkleineren sowie die drei lexikographisch nächstgrößeren Ziffernfolgen und die jeweils dargestellten Werte an!
+\end{enumerate}
