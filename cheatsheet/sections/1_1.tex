@@ -1,0 +1,85 @@
+\subsection{Dezimal $\rightarrow$ Binär}
+
+1. Methode:\\
+
+$314_{10} = 256 + 32 + 16 + 8 + 2 = 100111010_2$
+
+\begin{table}[h]
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+256 & 128 & 64 & 32 & 16 & 8 & 4 & 2 & 1\\
+\hline
+1   &  0  &  0 &  1 &  1 & 1 & 0 & 1 & 0\\
+\hline
+\end{tabular}
+\end{table}
+
+2. Methode:\\
+
+\begin{tabular}{cccccccc}
+314 & $:$ & 2 & $=$ & 157 & R & 0&\multirow{9}*{\limitarrow}\\
+157 & $:$ & 2 & $=$ &  78 & R & 1\\
+ 78 & $:$ & 2 & $=$ &  39 & R & 0\\
+ 39 & $:$ & 2 & $=$ &  19 & R & 1\\
+ 19 & $:$ & 2 & $=$ &   9 & R & 1\\
+  9 & $:$ & 2 & $=$ &   4 & R & 1\\
+  4 & $:$ & 2 & $=$ &   2 & R & 0\\
+  2 & $:$ & 2 & $=$ &   1 & R & 0\\
+  1 & $:$ & 2 & $=$ &   0 & R & 1\\
+\end{tabular}
+
+\subsection{Dezimal ($\rightarrow$ Binär) $\rightarrow$ Hexadezimal}
+
+1. Methode:\\
+
+$314_{10} = \text{13A}_{16}$\\
+
+\begin{tabular}{cccccccc}
+314 & $:$ & 16 & $=$ & 19 & R & 10 & \multirow{3}*{\limitarroww}\\
+ 19 & $:$ & 16 & $=$ &  1 & R & 3\\
+  1 & $:$ & 16 & $=$ &  0 & R & 1\\
+\end{tabular}\
+\\~\\
+
+2. Methode:\\
+
+- Zuerst Dezimal in Binär umwandeln\\
+
+$314_{10} = 100111010_2$\\
+
+- Binär in Hexadezimal umwandeln\\
+
+$1 0011 1010_2$ in Viererblöcke umschreiben (links ggfs. mit Nullen auffüllen). Die Viererblöcke in ihre entsprechende Dezimaldarstellung umrechnen und diese dann in die entsprechende Hexadezimalddarstellung.
+
+\begin{table}[h]
+\begin{tabular}{|r||c|c|c|}
+\hline
+Binär: & 0001 & 0011 & 1010\\
+\hline
+Dezimal: & 1 & 3 & 10\\
+\hline
+Hexadezimal: & 1& 3 & A\\
+\hline
+\end{tabular}
+\end{table}
+
+$100111010_2 = \text{13A}_{16}$
+
+\subsection{Binär $\rightarrow$ Dezimal}
+
+\begin{align*}
+100111010_2 &= 2^{8} \cdot 1 + 2^{7} \cdot 0 + 2^{6} \cdot 0 + 2^{5} \cdot 1 + 2^{4} \cdot 1 + 2^{3} \cdot 1 + 2^{2} \cdot 0 + 2^{1} \cdot 1 + 2^{0} \cdot 0\\
+&= 256 + 32 + 16 + 8 + 2\\
+&= 314_{10}
+\end{align*}
+
+\subsection{Hexadezimal $\rightarrow$ Dezimal}
+
+\begin{align*}
+\text{13A}_{16} &= 16^2 \cdot 1 + 16^1 \cdot 3 + 16^0 \cdot 10\\
+&= 256 + 48 + 10\\
+&= 314_{10}
+\end{align*}
+
+
+
